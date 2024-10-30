@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Dashboard from './pages/Dashboard.jsx';
@@ -14,7 +13,7 @@ function App() {
     <Router>
       <div className="min-h-screen flex">
         {/* Sidebar ซ้ายสุด */}
-        <aside className="w-[220px] bg-white text-black">
+        <aside className="w-[240px] bg-white text-black justify-center">
           <h2 className="text-[20px] font-extrabold my-[27px] font-body text-[#202224] text-center items-center"><span className='text-[#4880FF]'>Dash</span>Stack</h2>
           <Navbar/>
         </aside>
