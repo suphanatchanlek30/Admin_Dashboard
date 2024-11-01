@@ -7,6 +7,7 @@ import Navbar from './components/Navbar.jsx';
 import Inbox from './pages/Inbox.jsx';
 import OrderLists from './pages/OrderLists.jsx';
 import ProductStock from './pages/ProductStock.jsx';
+import TopNavigationBar from './components/TopNavigationBar.jsx';
 
 function App() {
   return (
@@ -20,8 +21,11 @@ function App() {
         
         {/* Main Content */}
         {/* เนื้อหาของแต่ละหน้า */}
-        <main className="flex-1 bg-gray-100 p-4">
-          <h1 className="text-2xl font-bold">Welcome to the Dashboard</h1>
+        <main className="flex-1 bg-gray-100">
+          {/* top bar */}
+          <div>
+            <TopNavigationBar/>
+          </div>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/products" element={<Products />} />
