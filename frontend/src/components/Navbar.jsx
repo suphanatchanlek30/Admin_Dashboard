@@ -1,12 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FiClock, FiBox, FiHeart, FiMail, FiList, FiArchive } from 'react-icons/fi';
+import { FiMail, FiList, FiArchive } from 'react-icons/fi';
+import { IoMdHeartEmpty } from "react-icons/io";
+import { TbClockCode } from "react-icons/tb";
+import { AiOutlineProduct } from "react-icons/ai";
 
 const Navbar = () => {
   const navLinks = [
-    { path: '/', label: 'Dashboard', icon: <FiClock /> },
-    { path: '/products', label: 'Products', icon: <FiBox /> },
-    { path: '/favorites', label: 'Favorites', icon: <FiHeart /> },
+    { path: '/', label: 'Dashboard', icon: <TbClockCode /> },
+    { path: '/products', label: 'Products', icon: <AiOutlineProduct /> },
+    { path: '/favorites', label: 'Favorites', icon: <IoMdHeartEmpty /> },
     { path: '/inbox', label: 'Inbox', icon: <FiMail /> },
     { path: '/orderlist', label: 'Order Lists', icon: <FiList /> },
     { path: '/productstock', label: 'Product Stock', icon: <FiArchive /> },
